@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <form>
+            <h1>REGISTRATION FORM</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <label for="male">
+                    <input type="radio" name="gender" value="male" required>Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" value="female" required>Female
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="file">Choose a File:</label>
+                <input type="file" name="file">
+            </div>
+            <div class="btn-group">
+                <button type="submit">Submit</button>
+                <br>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>
